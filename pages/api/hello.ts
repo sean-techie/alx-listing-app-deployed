@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+export const config = {};
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse
