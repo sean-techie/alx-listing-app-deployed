@@ -1,57 +1,35 @@
-export interface PropertyProps {
+// constants/index.ts
+
+export type PropertyProps = {
   name: string;
+  price: number;
+  rating: number;
+  image: string;
   address: {
-    state: string;
     city: string;
     country: string;
   };
-  rating: number;
-  category: string[];
-  price: number;
-  offers: {
-    bed: string;
-    shower: string;
-    occupants: string;
-  };
-  image: string;
-  discount: string;
-}
+};
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
+    price: 120,
+    rating: 4.8,
+    image: "/images/villa.jpg",
     address: {
-      state: "Seminyak",
-      city: "Bali",
-      country: "Indonesia"
+      city: "Cape Town",
+      country: "South Africa",
     },
-    rating: 4.89,
-    category: ["Luxury Villa", "Pool", "Free Parking"],
-    price: 3200,
-    offers: {
-      bed: "3",
-      shower: "3",
-      occupants: "4-6"
-    },
-    image: "https://example.com/image1.jpg",
-    discount: ""
   },
   {
-    name: "Mountain Escape Chalet",
+    name: "Mountain View Lodge",
+    price: 90,
+    rating: 4.5,
+    image: "/images/lodge.jpg",
     address: {
-      state: "Aspen",
-      city: "Colorado",
-      country: "USA"
+      city: "Drakensberg",
+      country: "South Africa",
     },
-    rating: 4.7,
-    category: ["Mountain View", "Fireplace", "Self Checkin"],
-    price: 1800,
-    offers: {
-      bed: "4",
-      shower: "2",
-      occupants: "5-7"
-    },
-    image: "https://example.com/image2.jpg",
-    discount: "30"
-  }
+  },
 ];
