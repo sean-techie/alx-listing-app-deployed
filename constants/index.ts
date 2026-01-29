@@ -1,5 +1,4 @@
 import { PropertyProps } from "@/types/property";
-
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
   {
     name: "Villa Ocean Breeze",
